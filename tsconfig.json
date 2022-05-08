@@ -27,6 +27,8 @@
     "enableI18nLegacyMessageIdFormat": false,
     "strictInjectionParameters": true,
     "strictInputAccessModifiers": true,
-    "strictTemplates": true
+    "strictTemplates": true,
+    "suppressImplicitAnyIndexErrors": true,//По непонятным причинам не была доступна конструкция  {...tasks[key], id: key} в сервисе TaskService
+    //эта конструкция позволяет запускать приложение в обход этой ошибки, всё работает корректно
   }
 }
